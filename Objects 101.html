@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>All about Objects</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <script>
+
+        /* ---------- USER DEFINED OBJECTS AND FUNCTIONS(METHODS) */
+        const hero = {
+            name: 'Bruce Wayne',
+            alias: 'Batman',
+            catchphrase: 'To the batcave!!',
+            // function isnide an object
+            speak: function() {
+                return 'Attention ' + this.catchphrase;
+            },
+            attack: function(sound) {
+                return `(punches bad guy) ${sound}`;
+            }
+        };
+         
+        
+        // accessing properties
+        const whatToLookFor = 'alias'
+        console.log(hero.name) // Bruce Wayne
+        console.log(hero['name']) // Bruce Wayne
+        console.log(hero[whatToLookFor])
+
+        // accesssing methods(functions)
+        console.log(hero.speak());
+        console.log(hero.attack('DISHUM'))
+
+
+        /* ---------- JAVASCRIPT DEFINED OBJECTS AND FUNCTIONS(METHODS) */
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    </body>
+</html>
